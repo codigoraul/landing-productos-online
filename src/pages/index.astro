@@ -1,6 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-const WA_LINK = "https://wa.me/56961765268?text=" + encodeURIComponent("Hola, quiero una página web para mi corredora de propiedades");
+const WA_LINK = "https://wa.me/56961765268?text=" + encodeURIComponent("Hola, quiero una tienda online para vender mis productos por internet");
 ---
 
 <Layout>
@@ -9,25 +9,26 @@ const WA_LINK = "https://wa.me/56961765268?text=" + encodeURIComponent("Hola, qu
      HERO
 ══════════════════════════════════════ -->
 <section id="inicio" class="relative overflow-hidden">
-  <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('/hero-bg.webp');"></div>
+  <div class="absolute inset-0 bg-cover bg-no-repeat bg-[70%_center] lg:bg-right" style="background-image: url('/slider-tienda.webp');"></div>
   <div class="relative max-w-7xl mx-auto px-6 lg:px-10 py-24 lg:py-36 grid lg:grid-cols-2 gap-16 items-center">
     <div>
       <span class="inline-block text-[#1BDCF5] text-xs font-semibold tracking-[0.2em] uppercase mb-8">
-        Especialistas en propiedades &middot; Todo Chile
+        Especialistas en tiendas online &middot; Todo Chile
       </span>
       <h1 class="font-display text-5xl lg:text-6xl font-bold text-[#1BDCF5] leading-tight mb-6">
-        Página web para<br/>
-        <span class="text-white">corredor de<br/>propiedades</span><br/>
-        en Chile
+        Diseño web<br/>
+        <span class="text-white">tienda online<br/>para vender</span><br/>
+        por internet
       </h1>
       <p class="text-lg text-white/80 leading-relaxed mb-10 max-w-lg">
-        Tu sitio inmobiliario listo en <strong class="text-[#1BDCF5] font-semibold">10 días</strong>,
-        con catálogo de propiedades, filtros de búsqueda y optimizado para aparecer primero en Google Chile.
+        Tu tienda online lista en <strong class="text-[#1BDCF5] font-semibold">15 días</strong>,
+        con catálogo de productos, carrito de compras, página de producto y pasarela de pago —
+        optimizada para vender y aparecer en Google.
       </p>
       <div class="flex flex-wrap gap-4 mb-10">
         <a href={WA_LINK} target="_blank" rel="noopener"
            class="bg-[#0045A7] hover:bg-[#003580] text-white font-semibold text-base px-8 py-4 rounded-lg transition-all duration-200 inline-block shadow-lg shadow-[#0045A7]/20 hover:shadow-[#0045A7]/30">
-          Quiero mi página web
+          Quiero mi tienda online
         </a>
         <a href="#servicios"
            class="border-2 border-white/30 hover:border-white text-white hover:text-white font-medium text-base px-8 py-4 rounded-lg transition-all duration-200 inline-block">
@@ -35,7 +36,7 @@ const WA_LINK = "https://wa.me/56961765268?text=" + encodeURIComponent("Hola, qu
         </a>
       </div>
       <div class="flex flex-wrap gap-8 text-sm text-white/60">
-        <span class="flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-[#1BDCF5]"></span>Sin mensualidades</span>
+        <span class="flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-[#1BDCF5]"></span>Pago seguro WebPay / Mercado Pago</span>
         <span class="flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-[#1BDCF5]"></span>Dominio .cl incluido</span>
         <span class="flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-[#1BDCF5]"></span>Soporte post-entrega</span>
       </div>
@@ -53,19 +54,19 @@ const WA_LINK = "https://wa.me/56961765268?text=" + encodeURIComponent("Hola, qu
   <div class="max-w-7xl mx-auto px-6 lg:px-10">
     <div class="text-center mb-16">
       <span class="inline-block text-[#0045A7] text-xs font-semibold tracking-[0.2em] uppercase mb-4">Compara</span>
-      <h2 class="font-display text-4xl lg:text-5xl font-bold text-[#0D1B3E] mb-4">¿Por qué necesitas tu<br/>propia página web?</h2>
-      <p class="text-slate-500 text-lg max-w-2xl mx-auto">Los portales te dan visibilidad, pero no te hacen dueño de tu presencia digital.</p>
+      <h2 class="font-display text-4xl lg:text-5xl font-bold text-[#0D1B3E] mb-4">¿Por qué necesitas tu<br/>propia tienda online?</h2>
+      <p class="text-slate-500 text-lg max-w-2xl mx-auto">Vender solo por redes sociales o marketplaces te limita. Tu propia tienda te da control real sobre tus ventas.</p>
     </div>
     <div class="grid lg:grid-cols-2 gap-8">
       <div class="bg-white rounded-2xl border border-slate-200 p-8 shadow-sm">
-        <h3 class="text-xl font-semibold text-slate-700 mb-6 pb-3 border-b border-slate-100">Sin página propia</h3>
+        <h3 class="text-xl font-semibold text-slate-700 mb-6 pb-3 border-b border-slate-100">Solo Instagram, WhatsApp o marketplace</h3>
         <ul class="space-y-4">
           {[
-            "Portalinmobiliario cobra mensualmente — si no pagas, desapareces",
-            "El cliente recuerda el portal, no a ti como corredor",
-            "No apareces en Google cuando buscan tu nombre",
-            "Dependes de las reglas y algoritmos del portal",
-            "No puedes personalizar cómo se muestran tus propiedades",
+            "El cliente recuerda el marketplace, no tu marca",
+            "Compites con miles de vendedores en la misma vitrina",
+            "El cliente tiene que escribirte para poder comprar",
+            "No apareces en Google cuando buscan tus productos",
+            "Dependes del algoritmo de redes sociales para que te vean",
           ].map(item => (
             <li class="flex gap-3 items-start text-slate-500 text-sm">
               <span class="w-5 h-5 rounded-full bg-red-50 text-red-400 flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold">✕</span>
@@ -75,14 +76,14 @@ const WA_LINK = "https://wa.me/56961765268?text=" + encodeURIComponent("Hola, qu
         </ul>
       </div>
       <div class="bg-[#F7FAFF] rounded-2xl border border-[#0045A7]/15 p-8 shadow-sm">
-        <h3 class="text-xl font-semibold text-[#0045A7] mb-6 pb-3 border-b border-[#0045A7]/10">Con tu página web propia</h3>
+        <h3 class="text-xl font-semibold text-[#0045A7] mb-6 pb-3 border-b border-[#0045A7]/10">Con tu propia tienda online</h3>
         <ul class="space-y-4">
           {[
-            "Pago único de desarrollo — sin mensualidades de portal",
-            "Tu marca, tu logo, tu identidad ante los clientes",
-            "Apareces en Google cuando buscan corredor + tu ciudad",
-            "Control total sobre tus propiedades y tu imagen",
-            "Los clientes te contactan directo por WhatsApp",
+            "Tú defines tus precios, promociones y condiciones de venta",
+            "Tu marca, tu dominio y tu propia base de clientes",
+            "El cliente compra solo: agrega al carrito, paga y recibe confirmación",
+            "Apareces en Google cuando buscan tus productos",
+            "Tu tienda recibe pedidos las 24 horas, también fuera de tu horario",
           ].map(item => (
             <li class="flex gap-3 items-start text-slate-600 text-sm font-medium">
               <span class="w-5 h-5 rounded-full bg-[#0045A7] text-white flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold">✓</span>
@@ -102,20 +103,20 @@ const WA_LINK = "https://wa.me/56961765268?text=" + encodeURIComponent("Hola, qu
   <div class="max-w-7xl mx-auto px-6 lg:px-10">
     <div class="text-center mb-16">
       <span class="inline-block text-[#0045A7] text-xs font-semibold tracking-[0.2em] uppercase mb-4">Qué incluye</span>
-      <h2 class="font-display text-4xl lg:text-5xl font-bold text-[#0D1B3E] mb-4">Todo listo desde el primer día</h2>
-      <p class="text-slate-500 text-lg max-w-xl mx-auto">Sin plugins de pago, sin configuraciones extras. Todo incluido.</p>
+      <h2 class="font-display text-4xl lg:text-5xl font-bold text-[#0D1B3E] mb-4">Tu tienda lista para vender</h2>
+      <p class="text-slate-500 text-lg max-w-xl mx-auto">Catálogo, carrito, página de producto y pago en línea. Todo incluido desde el primer día.</p>
     </div>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
       {[
-        ["Catálogo de Propiedades", "Panel para agregar propiedades con fotos, precio UF, dormitorios, baños, m² y ubicación. Sin límite de propiedades.", true],
-        ["Filtros de Búsqueda", "Tus clientes filtran por tipo de propiedad, operación (venta/arriendo) y precio máximo en UF.", false],
-        ["100% Responsive", "Diseño perfecto en celular, tablet y computador. El 70% de tus clientes busca desde el móvil.", false],
-        ["Ultra Rápido", "Tecnología Astro JS + WordPress Headless. Carga en menos de 1 segundo.", false],
-        ["Mapa Google Maps", "Cada propiedad muestra su ubicación exacta en Google Maps. Más confianza, más visitas.", false],
-        ["WhatsApp por Propiedad", "Botón de contacto directo en cada propiedad. El cliente llega directo a ti.", false],
-        ["Galería con Lightbox", "Galería de fotos con zoom y carrusel profesional. Como los grandes portales inmobiliarios.", false],
-        ["SEO Local Chile", "Optimizado para aparecer en Google. Schema.org, metadatos y velocidad de carga incluidos.", false],
+        ["Catálogo de Productos", "Panel para agregar productos con fotos, precio, stock y variantes (talla, color, modelo). Sin límite de productos.", true],
+        ["Carrito de Compras", "Carrito intuitivo: el cliente agrega, modifica cantidades y ve el total con costo de envío antes de pagar.", false],
+        ["Página de Producto", "Ficha de producto con galería de fotos, descripción, variantes y botón de compra. Optimizada para convertir.", false],
+        ["Pasarela de Pago", "Integración con WebPay, Mercado Pago y transferencia. El cliente paga en línea de forma segura.", false],
+        ["Gestión de Pedidos", "Recibe y administra tus pedidos desde el panel. Notificación por correo de cada venta nueva.", false],
+        ["100% Responsive", "Diseño perfecto en celular, tablet y computador. La mayoría de tus clientes compra desde el móvil.", false],
+        ["Ultra Rápido", "Tecnología Astro JS + WordPress Headless. Carga veloz, clave para no perder ventas.", false],
+        ["SEO para Tiendas", "Optimizada para Google: fichas de producto indexables, metadatos, Schema.org y velocidad de carga.", false],
       ].map(([titulo, desc, featured]) => (
         <div class={`group p-6 rounded-2xl border transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg ${featured ? 'bg-[#0045A7] border-[#0045A7] text-white shadow-lg shadow-[#0045A7]/15' : 'bg-white border-slate-200 hover:border-[#0045A7]/30'}`}>
           <h3 class={`font-semibold text-base mb-3 ${featured ? 'text-white' : 'text-slate-700'}`}>{titulo}</h3>
@@ -137,34 +138,38 @@ const WA_LINK = "https://wa.me/56961765268?text=" + encodeURIComponent("Hola, qu
     <div class="text-center mb-16">
       <span class="inline-block text-[#1BDCF5] text-xs font-semibold tracking-[0.2em] uppercase mb-4">Inversión</span>
       <h2 class="font-display text-4xl lg:text-5xl font-bold text-white mb-4">Planes transparentes</h2>
-      <p class="text-white/40 text-lg">Elige el plan que mejor se adapte a tu negocio inmobiliario.</p>
+      <p class="text-white/40 text-lg">Elige el plan que mejor se adapte a tu negocio online.</p>
     </div>
-    
+
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
-      
+
       <!-- Plan Básico -->
       <div class="bg-white rounded-2xl p-8 lg:p-10 border-2 border-slate-200 hover:border-[#0045A7]/30 transition-all duration-200">
         <div class="mb-6">
           <h3 class="text-2xl font-bold text-slate-800 mb-2">Plan Básico</h3>
-          <p class="text-slate-500 text-sm">Ideal para empezar tu presencia digital</p>
+          <p class="text-slate-500 text-sm">Ideal para lanzar tu tienda online</p>
         </div>
-        
+
         <div class="mb-8">
           <div class="flex items-baseline gap-2 mb-2">
             <span class="text-slate-600 text-lg">Desde</span>
-            <span class="text-5xl font-bold text-[#0045A7]">$300.000</span>
+            <span class="text-5xl font-bold text-[#0045A7]">$340.000</span>
           </div>
           <p class="text-slate-600 text-sm">Pago único en 2 cuotas</p>
         </div>
-        
+
         <ul class="space-y-4 mb-8">
           <li class="flex items-start gap-3">
             <svg class="w-5 h-5 text-[#0045A7] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-            <span class="text-slate-700">Diseño web profesional personalizado</span>
+            <span class="text-slate-700">Diseño de tienda online profesional y personalizado</span>
           </li>
           <li class="flex items-start gap-3">
             <svg class="w-5 h-5 text-[#0045A7] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-            <span class="text-slate-700">Catálogo de propiedades autoadministrable</span>
+            <span class="text-slate-700">Catálogo de productos autoadministrable</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-[#0045A7] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+            <span class="text-slate-700">Carrito de compras y pasarela de pago integrada</span>
           </li>
           <li class="flex items-start gap-3">
             <svg class="w-5 h-5 text-[#0045A7] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
@@ -172,35 +177,35 @@ const WA_LINK = "https://wa.me/56961765268?text=" + encodeURIComponent("Hola, qu
           </li>
           <li class="flex items-start gap-3">
             <svg class="w-5 h-5 text-[#0045A7] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-            <span class="text-slate-700">Optimización SEO básica</span>
+            <span class="text-slate-700">Optimización SEO básica para productos</span>
           </li>
           <li class="flex items-start gap-3">
             <svg class="w-5 h-5 text-[#0045A7] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-            <span class="text-slate-700">Capacitación para gestionar propiedades</span>
+            <span class="text-slate-700">Capacitación para gestionar productos y pedidos</span>
           </li>
           <li class="flex items-start gap-3">
             <svg class="w-5 h-5 text-[#0045A7] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-            <span class="text-slate-700">Entrega en 10 días</span>
+            <span class="text-slate-700">Entrega en 15 días</span>
           </li>
         </ul>
-        
+
         <a href={WA_LINK} target="_blank" rel="noopener"
            class="block w-full bg-[#0045A7] hover:bg-[#003580] text-white font-semibold text-center px-8 py-4 rounded-lg transition-all duration-200 shadow-lg shadow-[#0045A7]/20 hover:shadow-[#0045A7]/30">
           Solicitar Plan Básico
         </a>
       </div>
-      
+
       <!-- Plan Pro -->
       <div class="bg-gradient-to-br from-[#0045A7] to-[#003580] rounded-2xl p-8 lg:p-10 border-2 border-[#1BDCF5]/30 relative overflow-hidden">
         <div class="absolute top-4 right-4">
           <span class="bg-[#1BDCF5] text-[#0045A7] text-xs font-bold px-3 py-1 rounded-full">RECOMENDADO</span>
         </div>
-        
+
         <div class="mb-6">
           <h3 class="text-2xl font-bold text-white mb-2">Plan Pro</h3>
           <p class="text-white/70 text-sm">Posicionamiento continuo en Google</p>
         </div>
-        
+
         <div class="mb-8">
           <div class="flex items-baseline gap-2 mb-2">
             <span class="text-white/70 text-lg">Desde</span>
@@ -209,7 +214,7 @@ const WA_LINK = "https://wa.me/56961765268?text=" + encodeURIComponent("Hola, qu
           </div>
           <p class="text-white/70 text-sm">Incluye todo del Plan Básico +</p>
         </div>
-        
+
         <ul class="space-y-4 mb-8">
           <li class="flex items-start gap-3">
             <svg class="w-5 h-5 text-[#1BDCF5] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
@@ -217,11 +222,11 @@ const WA_LINK = "https://wa.me/56961765268?text=" + encodeURIComponent("Hola, qu
           </li>
           <li class="flex items-start gap-3">
             <svg class="w-5 h-5 text-[#1BDCF5] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-            <span class="text-white">Optimización mensual de contenido</span>
+            <span class="text-white">Optimización mensual de fichas de producto</span>
           </li>
           <li class="flex items-start gap-3">
             <svg class="w-5 h-5 text-[#1BDCF5] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-            <span class="text-white">Reportes de posicionamiento Google</span>
+            <span class="text-white">Reportes de posicionamiento y ventas</span>
           </li>
           <li class="flex items-start gap-3">
             <svg class="w-5 h-5 text-[#1BDCF5] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
@@ -236,17 +241,17 @@ const WA_LINK = "https://wa.me/56961765268?text=" + encodeURIComponent("Hola, qu
             <span class="text-white">Hosting premium incluido</span>
           </li>
         </ul>
-        
+
         <a href={WA_LINK} target="_blank" rel="noopener"
            class="block w-full bg-[#1BDCF5] hover:bg-[#1BDCF5]/90 text-[#0045A7] font-bold text-center px-8 py-4 rounded-lg transition-all duration-200 shadow-lg shadow-[#1BDCF5]/30 hover:shadow-[#1BDCF5]/50">
           Solicitar Plan Pro
         </a>
       </div>
-      
+
     </div>
-    
+
     <p class="text-center text-white/40 text-sm mt-12">
-      💳 Aceptamos transferencia, WebPay y tarjetas de crédito/débito
+      💳 Tu tienda acepta transferencia, WebPay y tarjetas de crédito/débito vía Mercado Pago
     </p>
   </div>
 </section>
@@ -258,14 +263,14 @@ const WA_LINK = "https://wa.me/56961765268?text=" + encodeURIComponent("Hola, qu
   <div class="max-w-7xl mx-auto px-6 lg:px-10">
     <div class="text-center mb-16">
       <span class="inline-block text-[#0045A7] text-xs font-semibold tracking-[0.2em] uppercase mb-4">Tecnología</span>
-      <h2 class="font-display text-4xl lg:text-5xl font-bold text-[#0D1B3E] mb-4">Mejor que Wix o<br/>WordPress clásico</h2>
-      <p class="text-slate-500 text-lg">WordPress Headless + Astro JS es la combinación más potente del mercado.</p>
+      <h2 class="font-display text-4xl lg:text-5xl font-bold text-[#0D1B3E] mb-4">Más rápida que Shopify o<br/>WooCommerce clásico</h2>
+      <p class="text-slate-500 text-lg">WordPress Headless + Astro JS combina velocidad de carga con la flexibilidad de una tienda a tu medida.</p>
     </div>
     <div class="grid lg:grid-cols-2 gap-6 mb-16">
       <div class="p-8 bg-slate-50 rounded-2xl border border-slate-200">
-        <h3 class="font-semibold text-slate-600 text-lg mb-6">Wix / WordPress clásico</h3>
+        <h3 class="font-semibold text-slate-600 text-lg mb-6">Plantilla de tienda genérica</h3>
         <ul class="space-y-4">
-          {["Carga lenta — 4 a 8 segundos","Vulnerable a hackeos y malware","Pagas plugins mensualmente","Diseño genérico de plantilla","Mal puntaje en Google PageSpeed"].map(i => (
+          {["Carga lenta — afecta la conversión y el SEO","Mensualidad de plataforma fija todos los meses","Diseño de plantilla igual al de tu competencia","Funciones extra solo con apps de pago","Mal puntaje en Google PageSpeed"].map(i => (
             <li class="flex gap-3 text-slate-500 text-sm items-center">
               <span class="w-1.5 h-1.5 rounded-full bg-red-400 flex-shrink-0"></span>{i}
             </li>
@@ -275,7 +280,7 @@ const WA_LINK = "https://wa.me/56961765268?text=" + encodeURIComponent("Hola, qu
       <div class="p-8 bg-[#F7FAFF] rounded-2xl border border-[#0045A7]/15">
         <h3 class="font-semibold text-[#0045A7] text-lg mb-6">WordPress Headless + Astro JS</h3>
         <ul class="space-y-4">
-          {["Carga ultra rápida — menos de 1 segundo","Frontend separado — mucho más seguro","Sin plugins de pago innecesarios","Diseño 100% personalizado con tu marca","98+ en Google PageSpeed"].map(i => (
+          {["Carga ultra rápida — mejor experiencia de compra","Frontend separado — mucho más seguro","Diseño 100% personalizado con tu marca","Catálogo, carrito y pago a tu medida","98+ en Google PageSpeed"].map(i => (
             <li class="flex gap-3 text-slate-600 text-sm font-medium items-center">
               <span class="w-1.5 h-1.5 rounded-full bg-[#0045A7] flex-shrink-0"></span>{i}
             </li>
@@ -284,7 +289,7 @@ const WA_LINK = "https://wa.me/56961765268?text=" + encodeURIComponent("Hola, qu
       </div>
     </div>
     <div class="flex flex-wrap justify-center gap-10">
-      {[["WP","WordPress"],["ACF","Custom Fields"],["Astro","Astro JS"],["▼","Vercel"],["Maps","Google Maps"]].map(([icon, label]) => (
+      {[["WP","WordPress"],["ACF","Custom Fields"],["Astro","Astro JS"],["$","Mercado Pago"],["WP","WebPay"]].map(([icon, label]) => (
         <div class="flex flex-col items-center gap-2 group cursor-default">
           <div class="w-16 h-16 flex items-center justify-center rounded-xl border border-slate-200 bg-white text-[#0045A7] font-bold text-sm group-hover:bg-[#0045A7] group-hover:text-white group-hover:border-[#0045A7] transition-all duration-200">
             {icon}
@@ -292,6 +297,66 @@ const WA_LINK = "https://wa.me/56961765268?text=" + encodeURIComponent("Hola, qu
           <span class="text-xs text-slate-400 text-center">{label}</span>
         </div>
       ))}
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     PORTAFOLIO
+══════════════════════════════════════ -->
+<section class="py-24 bg-white" id="portafolio">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="text-center mb-16">
+      <span class="inline-block text-[#0045A7] text-xs font-semibold tracking-[0.2em] uppercase mb-4">Nuestro trabajo</span>
+      <h2 class="font-display text-4xl lg:text-5xl font-bold text-[#0D1B3E] mb-4">Portafolio</h2>
+      <p class="text-slate-500 text-lg max-w-2xl mx-auto">Algunos de los proyectos que hemos desarrollado para clientes en Chile.</p>
+    </div>
+
+    <!-- Grid -->
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      {[
+        { img: 'https://diseñopaginas.cl/assets/img/tienda-online/hielos-sur.webp', url: 'https://hielosdelsur.cl/', title: 'Hielos del Sur', cat: 'Mobiliario urbano', desc: 'Sitio web mobiliario urbano · Diseño, construcción e instalación (2020)', tags: ['WordPress', 'Diseño'], cta: 'Ver sitio →', alt: 'Hielos del Sur - Tienda online WordPress Chile' },
+        { img: 'https://diseñopaginas.cl/assets/img/tienda-online/nelparts.webp', url: 'https://nelparts.cl/', title: 'Nelparts', cat: 'Web repuestos camiones', desc: 'Diseño web Nelparts · www.nelparts.cl (2025)', tags: ['WordPress', 'E-commerce'], cta: 'Ver sitio →', alt: 'Nelparts - Ecommerce repuestos camiones Chile WooCommerce' },
+        { img: 'https://diseñopaginas.cl/assets/img/tienda-online/ramsy.png', url: 'https://ramsy.cl/prueba/', title: 'Ramsy', cat: 'Venta productos industrias', desc: 'Tienda online de productos para industrias · ramsy.cl (2026)', tags: ['E-commerce', 'WordPress'], cta: 'Ver sitio →', alt: 'Ramsy - Tienda online productos industrias WooCommerce Chile' },
+        { img: 'https://diseñopaginas.cl/assets/img/tienda-online/novatech-screenshot.jpg', url: 'https://disenopaginas.cl/productos-muestra/', title: 'NovaTech — Demo Tienda', cat: 'Tienda online rápida', desc: 'Ecommerce con Astro JS: carga en menos de 1 seg, 100/100 PageSpeed y carrito integrado.', tags: ['Astro JS', 'E-commerce'], cta: 'Ver demo →', alt: 'NovaTech - Tienda online tecnología Astro JS carga rápida Chile' },
+      ].map((p) => (
+        <article class="group flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm hover:shadow-lg hover:border-[#0045A7]/30 transition-all duration-200">
+          <a href={p.url} target="_blank" rel="noopener noreferrer" class="relative block overflow-hidden aspect-[4/3]" aria-label={`Ver ${p.title}`}>
+            <span class="absolute top-3 left-3 z-10 flex gap-1.5">
+              <span class="w-2.5 h-2.5 rounded-full bg-red-400"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-yellow-400"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-green-400"></span>
+            </span>
+            <img
+              src={p.img}
+              alt={p.alt}
+              width={600}
+              height={450}
+              loading="lazy"
+              class="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+          </a>
+          <div class="flex flex-col flex-1 p-5">
+            <span class="text-[#0045A7] text-[11px] font-semibold tracking-[0.15em] uppercase mb-2">{p.cat}</span>
+            <h3 class="text-lg font-bold text-[#0D1B3E] leading-tight mb-2">{p.title}</h3>
+            <p class="text-sm text-slate-500 leading-relaxed flex-1">{p.desc}</p>
+            <div class="flex flex-wrap gap-2 mt-4">
+              {p.tags.map((t) => (
+                <span class="text-xs font-medium text-[#0045A7] bg-[#F7FAFF] border border-[#0045A7]/15 rounded-full px-3 py-1">{t}</span>
+              ))}
+            </div>
+            <a href={p.url} target="_blank" rel="noopener noreferrer" class="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-[#0045A7] hover:text-[#003580] transition-colors">
+              {p.cta}
+            </a>
+          </div>
+        </article>
+      ))}
+    </div>
+
+    <div class="text-center mt-12">
+      <a href="#contacto" class="inline-flex items-center gap-2 bg-[#0045A7] hover:bg-[#003580] text-white font-semibold text-base px-8 py-4 rounded-lg transition-all duration-200 shadow-lg shadow-[#0045A7]/20">
+        Cotiza tu proyecto →
+      </a>
     </div>
   </div>
 </section>
@@ -307,13 +372,14 @@ const WA_LINK = "https://wa.me/56961765268?text=" + encodeURIComponent("Hola, qu
     </div>
     <div class="space-y-3">
       {[
-        ["¿Cuánto cuesta una página web para corredor de propiedades?", "Nuestros proyectos parten desde UF 30 el desarrollo inicial. Hosting desde $15.000 CLP/mes. Sin costos ocultos. Cotización personalizada por WhatsApp en menos de 24 horas."],
-        ["¿Puedo agregar propiedades yo mismo sin saber programar?", "Sí, 100%. El panel WordPress es muy intuitivo — igual que subir una foto a Instagram. Agrega fotos, precio, descripción y ubicación en minutos. Te capacitamos en la entrega."],
-        ["¿Apareceré en Google cuando busquen corredor de propiedades en mi ciudad?", "Ese es el objetivo principal. Configuramos SEO local completo: metadatos, Schema.org, Google Business Profile y velocidad de carga óptima. Resultados visibles en 30 a 90 días."],
-        ["¿Funciona para inmobiliarias grandes también?", "Sí. La tecnología escala desde un corredor independiente hasta inmobiliarias con más de 500 propiedades y múltiples agentes. El sistema crece contigo."],
-        ["¿Qué pasa si necesito cambios después de la entrega?", "Incluimos 30 días de soporte post-entrega sin costo adicional. Después ofrecemos planes de mantenimiento mensual o cobro por hora según lo que necesites."],
-        ["¿Trabajan en todo Chile o solo en algunas ciudades?", "Todo Chile — desde Arica hasta Punta Arenas. Trabajamos 100% remoto por videollamada y WhatsApp, la ubicación no importa."],
-        ["¿Puedo seguir usando Portalinmobiliario además de mi página?", "Sí. Tu sitio web es completamente independiente. Puedes usarlos en paralelo y dejar de depender solo de los portales para conseguir clientes."],
+        ["¿Cuánto cuesta una tienda online?", "El desarrollo parte desde 2 pagos de $170.000.- ($340.000.-). Sin costos ocultos. Te enviamos una cotización personalizada por WhatsApp en menos de 24 horas según el tamaño de tu catálogo."],
+        ["¿Puedo agregar productos yo mismo sin saber programar?", "Sí, 100%. El panel WordPress es muy intuitivo — igual que subir una foto a Instagram. Agregas fotos, precio, stock, variantes y descripción en minutos. Te capacitamos en la entrega."],
+        ["¿Qué medios de pago acepta mi tienda?", "Integramos WebPay, Mercado Pago (tarjetas de crédito y débito) y transferencia bancaria. Tu cliente paga en línea de forma segura, directo en tu tienda."],
+        ["¿Cómo se gestionan los envíos?", "Configuramos las zonas y costos de envío que tú definas (por comuna, peso o monto). También puedes ofrecer retiro en tienda. Se puede integrar con couriers como Chilexpress o Starken según tu operación."],
+        ["¿Apareceré en Google cuando busquen mis productos?", "Ese es el objetivo. Cada ficha de producto se crea indexable, con metadatos, Schema.org y buena velocidad de carga. El posicionamiento orgánico toma tiempo: los primeros resultados suelen verse entre 30 y 90 días."],
+        ["¿Funciona para catálogos grandes?", "Sí. La tecnología escala desde una tienda con pocos productos hasta catálogos con cientos o miles de referencias y variantes. El sistema crece con tu negocio."],
+        ["¿Qué pasa si necesito cambios después de la entrega?", "Incluimos 30 días de soporte post-entrega sin costo adicional. Después puedes tomar un plan de mantenimiento mensual o pagar por hora según lo que necesites."],
+        ["¿Puedo seguir vendiendo en Instagram o Mercado Libre?", "Sí. Tu tienda es completamente independiente. Puedes usarlas en paralelo y, de a poco, dejar de depender solo de redes sociales o marketplaces para conseguir ventas."],
       ].map(([pregunta, respuesta]) => (
         <details class="group bg-white rounded-xl border border-slate-200 hover:border-[#0045A7]/30 hover:shadow-sm transition-all duration-200">
           <summary class="flex justify-between items-center px-6 py-5 cursor-pointer list-none">
@@ -335,7 +401,7 @@ const WA_LINK = "https://wa.me/56961765268?text=" + encodeURIComponent("Hola, qu
 <section class="bg-[#646778]">
   <div class="max-w-5xl mx-auto px-6 grid grid-cols-2 lg:grid-cols-4 divide-x divide-white/15">
     {[
-      ["+120", "Corredores activos"],
+      ["+120", "Proyectos entregados"],
       ["15", "Días de entrega"],
       ["98%", "PageSpeed Score"],
       ["16", "Regiones de Chile"],
@@ -357,10 +423,10 @@ const WA_LINK = "https://wa.me/56961765268?text=" + encodeURIComponent("Hola, qu
   </div>
   <div class="relative max-w-3xl mx-auto px-6">
     <h2 class="font-display text-4xl lg:text-5xl font-bold text-white mb-6">
-      ¿Listo para tener tu página<br/>web inmobiliaria?
+      ¿Listo para vender<br/>con tu tienda online?
     </h2>
     <p class="text-blue-100/70 text-lg mb-10 leading-relaxed">
-      Cotizamos en menos de 24 horas. Tu sitio puede estar listo en 15 días.
+      Cotizamos en menos de 24 horas. Tu tienda puede estar lista en 15 días.
     </p>
     <div class="flex flex-wrap gap-4 justify-center">
       <a href={WA_LINK} target="_blank" rel="noopener"
@@ -372,7 +438,7 @@ const WA_LINK = "https://wa.me/56961765268?text=" + encodeURIComponent("Hola, qu
         Enviar correo
       </a>
     </div>
-    <p class="text-blue-200/40 text-sm mt-8">Corredores de propiedades e inmobiliarias · Todo Chile</p>
+    <p class="text-blue-200/40 text-sm mt-8">Diseño de tiendas online y ecommerce · Todo Chile</p>
   </div>
 </section>
 
@@ -384,34 +450,50 @@ const WA_LINK = "https://wa.me/56961765268?text=" + encodeURIComponent("Hola, qu
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "¿Cuánto cuesta una página web para corredor de propiedades?",
+      "name": "¿Cuánto cuesta una tienda online?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nuestros proyectos parten desde UF 30 el desarrollo inicial. Hosting desde $15.000 CLP/mes. Sin costos ocultos. Cotización personalizada por WhatsApp en menos de 24 horas."
+        "text": "El desarrollo parte desde 2 pagos de $170.000 ($340.000). Sin costos ocultos. Cotización personalizada por WhatsApp en menos de 24 horas según el tamaño del catálogo."
       }
     },
     {
       "@type": "Question",
-      "name": "¿Puedo agregar propiedades yo mismo sin saber programar?",
+      "name": "¿Puedo agregar productos yo mismo sin saber programar?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sí, 100%. El panel WordPress es muy intuitivo — igual que subir una foto a Instagram. Agrega fotos, precio, descripción y ubicación en minutos. Te capacitamos en la entrega."
+        "text": "Sí, 100%. El panel WordPress es muy intuitivo — igual que subir una foto a Instagram. Agregas fotos, precio, stock, variantes y descripción en minutos. Te capacitamos en la entrega."
       }
     },
     {
       "@type": "Question",
-      "name": "¿Apareceré en Google cuando busquen corredor de propiedades en mi ciudad?",
+      "name": "¿Qué medios de pago acepta mi tienda?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ese es el objetivo principal. Configuramos SEO local completo: metadatos, Schema.org, Google Business Profile y velocidad de carga óptima. Resultados visibles en 30 a 90 días."
+        "text": "Integramos WebPay, Mercado Pago (tarjetas de crédito y débito) y transferencia bancaria. Tu cliente paga en línea de forma segura, directo en tu tienda."
       }
     },
     {
       "@type": "Question",
-      "name": "¿Funciona para inmobiliarias grandes también?",
+      "name": "¿Cómo se gestionan los envíos?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sí. La tecnología escala desde un corredor independiente hasta inmobiliarias con más de 500 propiedades y múltiples agentes. El sistema crece contigo."
+        "text": "Configuramos las zonas y costos de envío que definas (por comuna, peso o monto) y la opción de retiro en tienda. Se puede integrar con couriers como Chilexpress o Starken según tu operación."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Apareceré en Google cuando busquen mis productos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ese es el objetivo. Cada ficha de producto se crea indexable, con metadatos, Schema.org y buena velocidad de carga. El posicionamiento orgánico suele mostrar primeros resultados entre 30 y 90 días."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Funciona para catálogos grandes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí. La tecnología escala desde una tienda con pocos productos hasta catálogos con cientos o miles de referencias y variantes. El sistema crece con tu negocio."
       }
     },
     {
@@ -424,18 +506,10 @@ const WA_LINK = "https://wa.me/56961765268?text=" + encodeURIComponent("Hola, qu
     },
     {
       "@type": "Question",
-      "name": "¿Trabajan en todo Chile o solo en algunas ciudades?",
+      "name": "¿Puedo seguir vendiendo en Instagram o Mercado Libre?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Todo Chile — desde Arica hasta Punta Arenas. Trabajamos 100% remoto por videollamada y WhatsApp, la ubicación no importa."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "¿Puedo seguir usando Portalinmobiliario además de mi página?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Sí. Tu sitio web es completamente independiente. Puedes usarlos en paralelo y dejar de depender solo de los portales para conseguir clientes."
+        "text": "Sí. Tu tienda es completamente independiente. Puedes usarlas en paralelo y dejar de depender solo de redes sociales o marketplaces para conseguir ventas."
       }
     }
   ]

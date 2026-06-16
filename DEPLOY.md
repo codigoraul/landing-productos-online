@@ -1,7 +1,7 @@
-# Guía de Despliegue - Página Web Corredor de Propiedades
+# Guía de Despliegue - Tienda Online
 
 ## URL de Producción
-`https://diseñopaginas.cl/diseno-web-corredor-propiedades`
+`https://diseñopaginas.cl/diseno-web-tienda-online`
 
 ## Configuración de GitHub Actions
 
@@ -28,7 +28,7 @@ Para que el despliegue automático funcione, necesitas configurar los siguientes
 
 En el archivo `.github/workflows/deploy.yml`, la carpeta de destino está configurada como:
 ```yaml
-server-dir: /public_html/diseno-web-corredor-propiedades/
+server-dir: /public_html/diseno-web-tienda-online/
 ```
 
 Asegúrate de que esta ruta coincida con la estructura de tu servidor.
@@ -48,14 +48,14 @@ Los archivos compilados estarán en la carpeta `dist/`
 
 Sube todo el contenido de `dist/` a:
 ```
-/public_html/diseno-web-corredor-propiedades/
+/public_html/diseno-web-tienda-online/
 ```
 
 ## Verificación Post-Despliegue
 
 Después del despliegue, verifica:
 
-1. ✅ La página carga correctamente en `https://diseñopaginas.cl/diseno-web-corredor-propiedades`
+1. ✅ La página carga correctamente en `https://diseñopaginas.cl/diseno-web-tienda-online`
 2. ✅ Todas las imágenes se ven correctamente
 3. ✅ Los enlaces del footer funcionan
 4. ✅ El formulario de WhatsApp funciona

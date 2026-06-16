@@ -1,4 +1,4 @@
-name: Deploy to diseñopaginas.cl
+name: Deploy tienda online to diseñopaginas.cl
 
 on:
   push:
@@ -32,7 +32,7 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./dist/
-          server-dir: /public_html/diseno-web-corredor-propiedades/
+          server-dir: /public_html/diseno-web-tienda-online/
           exclude: |
             **/.git*
             **/.git*/**

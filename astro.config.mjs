@@ -4,6 +4,6 @@ import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://diseñopaginas.cl/diseno-web-corredor-propiedades',
+  site: 'https://diseñopaginas.cl/diseno-web-tienda-online',
   integrations: [tailwind()],
 });
